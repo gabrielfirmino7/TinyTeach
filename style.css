@@ -1,0 +1,552 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #EDEDED;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004d63;
+  padding: 5px 30px;
+}
+
+.navbar .logo {
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .logo span {
+  color: #00d4ff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+
+}
+
+.navbar ul li {
+  display: inline;
+
+}
+
+.navbar ul li a {
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #959496;
+  text-decoration: none;
+}
+
+.navbar ul li a.btn-cadastro {
+  background-color: #EDEDED;
+  color: #004d63;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.navbar ul li a.btn-cadastro:hover {
+  background: #D9D9D9;
+  /* Muda o fundo para outro tipo de branco */
+  color: #fff;
+  /* Muda o texto para branco */
+  transition: 0.3s;
+  /* Suaviza a transição */
+}
+
+.logo img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 30px;
+}
+
+#cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+
+}
+
+.cadastro-content {
+  max-width: 50%;
+}
+
+.cadastro-content h1 {
+  font-size: 2rem;
+  color: #004d63;
+}
+
+.cadastro-content h1 span {
+  color: #00bcd4;
+}
+
+.cadastro-content p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.cadastro-content .btn-planos {
+  background: #ff00ff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cadastro-content .btn-planos:hover {
+  background: #176B70;
+  /* Muda o fundo para verde*/
+  transition: 0.3s;
+  /* Suaviza a transição */
+}
+
+.cadastro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Sobre nos*/
+.hero {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+
+  padding: 80px 200px;
+
+  background-color: #176A70;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+
+.text-content {
+
+  max-width: 50%;
+
+  color: #ffffff;
+
+}
+
+
+
+.text-content h2 {
+
+  font-size: 24px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+
+  color: #b3e0e0;
+
+}
+
+
+
+.text-content h1 {
+
+  font-size: 48px;
+
+  margin-bottom: 20px;
+
+  font-weight: bold;
+
+}
+
+
+
+.text-content p {
+
+  font-size: 20px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.image-content {
+
+  max-width: 40%;
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+
+
+.image-content img {
+
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 8px;
+
+}
+
+
+
+.background-icon {
+
+  position: absolute;
+
+  right: 2%;
+
+  top: 7%;
+
+  width: 600px;
+
+  height: 600px;
+
+  background-image: url('imagens/capelo.png');
+
+  background-size: contain;
+
+  background-repeat: no-repeat;
+
+  opacity: 0.6;
+
+  z-index: 1;
+
+}
+
+/*Beneficios*/
+.beneficios {
+  padding: 40px 20px;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+.beneficios h2 {
+  color: #4ABDAC;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.beneficios h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.beneficios p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card:hover {
+  background-color: #ECECEC;
+}
+
+.card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.conhecer-button {
+  background-color: #F92AA3;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.conhecer-button:hover {
+  background-color: #176B70;
+}
+
+/* Planos*/
+
+.planos {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.introducao {
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.introducao h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  /* Centraliza as caixas horizontalmente */
+  flex-wrap: wrap;
+  align-items: center;
+  /* Opcional: Alinha as caixas verticalmente */
+  gap: 20px;
+  /* Espaçamento entre as caixas */
+  margin-top: 20px;
+}
+
+.plano1,
+.plano2,
+.plano3 {
+  background: #176B70;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.plano1:hover,
+.plano2:hover,
+.plano3:hover {
+  transform: scale(1.05);
+}
+
+.plano1 h2,
+.plano2 h2,
+.plano3 h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.plano1 .preco,
+.plano2 .preco,
+.plano3 .preco {
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #fff;
+}
+
+/* Estilo especial para os preços do plano1 e plano3 */
+.plano1 .preco,
+.plano3 .preco {
+  color: #FFC200;
+}
+
+.plano1 ul,
+.plano2 ul,
+.plano3 ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.plano1 ul li,
+.plano2 ul li,
+.plano3 ul li {
+  margin-bottom: 10px;
+  color: #f4f4f9;
+}
+
+.container-assinar {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Assinar {
+  background-color: #fff;
+  color: #176B70;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Assinar:hover {
+  background-color: #F92AA3;
+  color: #fff;
+}
+
+/* Contato */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #EDEDED;
+  height: 100vh;
+  width: 100vw;
+  border-radius: 8px;
+
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.content h2 span {
+  color: #176B70;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.content strong {
+  color: #176B70;
+}
+
+.contato {
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato:hover {
+  background-color: #176B70;
+}
+
+.telefone img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Rodape */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 200px;
+  background-color: #FFC700;
+  color: #484B4F;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 200px;
+}
+
+.footer-logo {
+  width: 100px;
+
+}
+
+.footer-section h4 {
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 20px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #484B4F;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 20px;
+}
